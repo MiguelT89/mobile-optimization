@@ -1,0 +1,42 @@
+{
+  "name": "website-optimization",
+  "version": "1.0.0",
+  "description": "Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiguelT89/website-optimization.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiguelT89/website-optimization/issues"
+  },
+  "homepage": "https://github.com/MiguelT89/website-optimization#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^3.2.2",
+    "gulp-exit": "0.0.2",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-htmlmin": "^1.3.0",
+    "gulp-image-resize": "^0.7.2",
+    "gulp-inline-css": "^3.1.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-uglify": "^1.5.3",
+    "jshint": "^2.9.1",
+    "ngrok": "^2.1.6",
+    "psi": "^2.0.3",
+    "run-sequence": "^1.1.5"
+  },
+  "dependencies": {
+    "critical": "^0.7.2",
+    "imagemin-jpeg-recompress": "^4.3.0"
+  }
+}
