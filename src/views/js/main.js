@@ -488,7 +488,7 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 // Moves the sliding background pizzas based on scroll position
 
 /*
-  ticking is used for requestAnimateFrame
+  ticking is used for requestAnimationFrame
 */
 
 var ticking = false;
@@ -515,7 +515,6 @@ function updatePositions() {
     var phase = phaseArray[j % 5];
     items[j].style.transform = "translateX(" + (items[j].basicLeft + phase) + "px)";
   }
-
   // User Timing API to the rescue again. Seriously, it's worth learning.
   // Super easy to create custom metrics.
   window.performance.mark("mark_end_frame");
@@ -525,10 +524,11 @@ function updatePositions() {
     logAverageFrame(timesToUpdatePosition);
   }
   ticking = false;
+  onScroll();
 }
 
 // runs updatePositions on scroll
-window.addEventListener('scroll', onScroll, false);
+window.addEventListener('scroll', onScroll);
 
 function onScroll() {
   requestTick();
@@ -566,9 +566,9 @@ document.addEventListener('DOMContentLoaded', function() {
     elem.src = "images/pizza.png";
     elem.style.height = "100px";
     elem.style.width = "73.333px";
-    elem.style.backfaceVisibility = "hidden";
-    elem.style.transform = "translateZ(0)";
-    elem.style.transform = "translate3d(0,0,0)";
+    // elem.style.backfaceVisibility = "hidden";
+    // elem.style.transform = "translateZ(0)";
+    // elem.style.transform = "translate3d(0,0,0)";
     elem.basicLeft = (i % cols) * s - halfwidth;
     elem.style.top = (Math.floor(i / cols) * s) + 'px';
     movingPi.appendChild(elem);
