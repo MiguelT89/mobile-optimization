@@ -1,11 +1,11 @@
 # Website Performance Optimization Project
-Project 5 of Udacity's Front-End Web Development nanodegree. This project was designed to teach website optimzation by obtainig a score greater than 90 on PageSpeed Insights and achieving greater than 60 Frames Per Second (FPS).
+Project 5 of Udacity's Front-End Web Development nanodegree. This project was designed to teach website optimization by obtaining a score greater than 90 on PageSpeed Insights and achieving greater than 60 Frames Per Second (FPS).
 
 The following steps were taken to improve performance:
 * Install Gulp to:
-  * Concatinate JavaScript and CSS
+  * Concatenate JavaScript and CSS
   * Minify JavaScript and CSS
-  * Inline CSS in all of the HTML files
+  * In-line CSS in all of the HTML files
   * Use both Ngrok and Browser Sync to create a local instance of the website
   * And to use psi to automatically start Ngrok and Browser Sync with one command
 
@@ -16,7 +16,7 @@ The following steps were taken to improve performance:
   * All images were resized and optimized using Adobe Photoshop
 
 * Pizza.html
-  * Merged some of the switchs to reduce the amount of calculations and total size
+  * Merged some of the switches to reduce the amount of calculations and total size
   * Removed all calculations which give constant values outside of for loops
   * Used transform CSS and reduced the total number of moving pizzas in pizza.html
   * Added requestAnimationFrame to help reduce paint and render time
